@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>E-commerce Product Page</title>
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-100">
+
+    
+    <div class="bg-gray-100 w-3/4 md:w-[80%] h-auto p-6 rounded-lg shadow-sm relative">
+        
+        
+        <div class="absolute top-2 left-6 text-sm flex space-x-6 text-black ">
+            <button class="hover:text-gray-300 font-bold text-xl">Sneakers</button>
+            <button class="hover:text-gray-300">Collections</button>
+            <button class="hover:text-gray-300">men</button>
+            <button class="hover:text-gray-300">women</button>
+            <button class="hover:text-gray-300">about</button>
+            <button class="hover:text-gray-300">contacts</button>
+        </div>
+
+        
+        <div class="absolute top-2 right-6 flex space-x-4 ">
+            
+            <a href="#" class="shopping-icon bg-gray-100 rounded-xl p-2 flex items-center justify-center w-6 h-6 transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
+                🛒 
+            </a>
+
+            
+            <a href="#" class="person-icon transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
+                <img src="person.jpg" alt="Person Icon" class="rounded-full w-6 h-6 border-2" />
+            </a>
+        </div>
+
+
+        <div class="shadow-sm border-b-2 border-gray-300 mt-6"></div>
+
+    
+        <div class="w-full md:w-[60%] h-auto mt-12 rounded-lg flex space-x-20 items-center">
+            <img src="first.jpg" alt="Sneakers" class="w-[280px] h-[250px] object-cover rounded-lg">
+            <div class="ml-6">
+                <div class="text-xs  mt-2">SNEAKER COMPANY</div>
+                <div class="mt-2 text-xl font-bold">Fall Limited Edition</div>
+                <div class="mt-0.5 text-xl font-bold">Sneakers</div>
+                <div class="text-xs  mt-2">These low-profile sneakers are your perfect casual </div>
+                <div class="text-xs  mt-2">companion. Featuring a durable outer sole.they'll</div>
+                <div class="text-xs  mt-2">withstand everything the weather can offer</div>
+            
+                <div class="flex items-center mt-6 space-x-6">
+                    <!-- Original Price with Line-through -->
+                    <div class="mt-2 text-xl font-bold">$125.00</div>
+                
+                    <!-- Discount Text -->
+                    <span class="bg-black text-sm text-white px-2 py-1 rounded-lg"><button>50%</button></span>
+                </div>
+                <div> <span class="bg-gray-100 text-sm text-black text font-bold px-4 py-1 rounded-full line-through mr-4">$250.00</span></div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-gray-300 text-black px-4 py-2 rounded-lg hover:bg-gray-200 focus:outline-none">
+                        🛒 Add to cart </button>
+                </div>
+            </div>
+        
+        </div>
+
+        
+        <div class="flex space-x-4 mt-6">
+            <img src="second.jpg" alt="Sneaker 2" class="w-[60px] h-[60px] object-cover rounded-lg transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
+            <img src="third.jpg" alt="Sneaker 3" class="w-[60px] h-[60px] object-cover rounded-lg transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
+            <img src="fourth.jpg" alt="Sneaker 4" class="w-[60px] h-[60px] object-cover rounded-lg transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
+            <img src="fifth.jpg" alt="Sneaker 5" class="w-[60px] h-[60px] object-cover rounded-lg transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
+        </div>
+
+       
+    </div>
+
+</body>
+</html>
