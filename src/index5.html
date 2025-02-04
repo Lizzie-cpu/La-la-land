@@ -8,63 +8,60 @@
 </head>
 <body class="flex justify-center items-center h-screen bg-gray-100">
 
-    
-    <div class="bg-gray-100 w-3/4 md:w-[80%] h-auto p-6 rounded-lg shadow-sm relative">
+    <div class="bg-white w-3/4 md:w-[80%] h-auto p-6 rounded-lg shadow-sm relative">
         
-        
-        <div class="absolute top-2 left-6 text-sm flex space-x-6 text-black ">
-            <button class="hover:text-gray-300 font-bold text-xl">Sneakers</button>
-            <button class="hover:text-gray-300">Collections</button>
-            <button class="hover:text-gray-300">men</button>
-            <button class="hover:text-gray-300">women</button>
-            <button class="hover:text-gray-300">about</button>
-            <button class="hover:text-gray-300">contacts</button>
+        <!-- Header with Category and Cart/Profile -->
+        <div class="absolute top-2 left-6 text-sm flex space-x-6 text-black">
+            <!-- Category Buttons: Men, Women, Contacts -->
+            <a href="men.html" class="hover:text-gray-300 font-bold text-xl">Men</a>
+            <a href="women.html" class="hover:text-gray-300 font-bold text-xl">Women</a>
+            <a href="contacts.html" class="hover:text-gray-300 font-bold text-xl">Contacts</a>
         </div>
 
-        
-        <div class="absolute top-2 right-6 flex space-x-4 ">
-            
-            <a href="#" class="shopping-icon bg-gray-100 rounded-xl p-2 flex items-center justify-center w-6 h-6 transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
+        <!-- Cart/Profile Icons -->
+        <div class="absolute top-2 right-6 flex space-x-4">
+            <a href="#" class="shopping-icon bg-gray-100 rounded-xl p-2 flex items-center justify-center w-8 h-8 transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
                 🛒 
             </a>
-
-            
             <a href="#" class="person-icon transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
-                <img src="person.jpg" alt="Person Icon" class="rounded-full w-6 h-6 border-2" />
+                <img src="person.jpg" alt="Person Icon" class="rounded-full w-8 h-8 border-2" />
             </a>
         </div>
 
-
+        <!-- Divider Line -->
         <div class="shadow-sm border-b-2 border-gray-300 mt-6"></div>
 
-    
-        <div class="w-full md:w-[60%] h-auto mt-12 rounded-lg flex space-x-20 items-center">
+        <!-- Product Image and Details Section -->
+        <div class="w-full md:w-[60%] h-auto mt-12 rounded-lg flex space-x-8 items-center">
             <img src="first.jpg" alt="Sneakers" class="w-[280px] h-[250px] object-cover rounded-lg">
             <div class="ml-6">
-                <div class="text-xs  mt-2">SNEAKER COMPANY</div>
-                <div class="mt-2 text-xl font-bold">Fall Limited Edition</div>
-                <div class="mt-0.5 text-xl font-bold">Sneakers</div>
-                <div class="text-xs  mt-2">These low-profile sneakers are your perfect casual </div>
-                <div class="text-xs  mt-2">companion. Featuring a durable outer sole.they'll</div>
-                <div class="text-xs  mt-2">withstand everything the weather can offer</div>
-            
+                <div class="text-xs mt-2 text-gray-500">SNEAKER COMPANY</div>
+                <div class="mt-2 text-2xl font-bold">Fall Limited Edition</div>
+                <div class="mt-0.5 text-xl font-semibold text-gray-700">Sneakers</div>
+                <div class="text-sm mt-2 text-gray-600">These low-profile sneakers are your perfect casual companion. Featuring a durable outer sole, they'll withstand everything the weather can offer.</div>
+
+                <!-- Price Section -->
                 <div class="flex items-center mt-6 space-x-6">
                     <!-- Original Price with Line-through -->
-                    <div class="mt-2 text-xl font-bold">$125.00</div>
-                
-                    <!-- Discount Text -->
+                    <div class="mt-2 text-2xl font-bold text-red-600">$125.00</div>
+                    <!-- Discount Badge -->
                     <span class="bg-black text-sm text-white px-2 py-1 rounded-lg"><button>50%</button></span>
                 </div>
-                <div> <span class="bg-gray-100 text-sm text-black text font-bold px-4 py-1 rounded-full line-through mr-4">$250.00</span></div>
-                <div class="flex items-center space-x-4">
-                    <button class="bg-gray-300 text-black px-4 py-2 rounded-lg hover:bg-gray-200 focus:outline-none">
-                        🛒 Add to cart </button>
+
+                <div class="text-sm mt-2">
+                    <span class="bg-gray-100 text-sm text-black font-bold px-4 py-1 rounded-full line-through mr-4">$250.00</span>
+                </div>
+
+                <!-- Add to Cart Button -->
+                <div class="flex items-center space-x-4 mt-4">
+                    <button class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 focus:outline-none transition-all duration-300">
+                        🛒 Add to Cart
+                    </button>
                 </div>
             </div>
-        
         </div>
 
-        
+        <!-- Thumbnail Images -->
         <div class="flex space-x-4 mt-6">
             <img src="second.jpg" alt="Sneaker 2" class="w-[60px] h-[60px] object-cover rounded-lg transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
             <img src="third.jpg" alt="Sneaker 3" class="w-[60px] h-[60px] object-cover rounded-lg transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
@@ -72,7 +69,12 @@
             <img src="fifth.jpg" alt="Sneaker 5" class="w-[60px] h-[60px] object-cover rounded-lg transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
         </div>
 
-       
+        <!-- Contact Form (appears when checkbox is checked) -->
+        <div class="mt-4 peer-checked:block hidden">
+            <label for="phone-number" class="block text-gray-700">Enter Phone Number</label>
+            <input type="text" id="phone-number" class="mt-2 p-2 border rounded w-full" placeholder="e.g., (123) 456-7890">
+        </div>
+
     </div>
 
 </body>
